@@ -1,0 +1,12 @@
+:host {
+  display: flex;
+  flex-direction: column;
+}
+
+coin-display-table {
+  margin-bottom: 50px;
+}
+
+coin-display-table:first-of-type {
+  margin-top: 20px;
+}
