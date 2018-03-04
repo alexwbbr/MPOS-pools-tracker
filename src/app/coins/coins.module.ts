@@ -4,9 +4,10 @@ import {CommonModule} from '@angular/common';
 import {EffectsModule} from '@ngrx/effects';
 import {StoreModule} from '@ngrx/store';
 import {CoinService} from './services/coinService';
-import {effects, reducers} from './store';
+import {reducers, effects} from './store_v2';
 import {HttpClientModule} from '@angular/common/http';
 import * as fromComponents from './components';
+import {ObjectToArrayPipe} from './pipes/object-to-array';
 
 @NgModule({
   imports: [
@@ -19,7 +20,7 @@ import * as fromComponents from './components';
   providers: [
     CoinService
   ],
-  declarations: [...fromComponents.components],
+  declarations: [...fromComponents.components, ObjectToArrayPipe],
   exports: [...fromComponents.components]
 })
 export class CoinsModule {

@@ -3,10 +3,10 @@
   flex-direction: column;
 }
 
-coin-display-table {
+coin-display-table, coin-display-table-v2 {
   margin-bottom: 50px;
 }
 
-coin-display-table:first-of-type {
+coin-display-table:first-of-type, coin-display-table-v2:first-of-type {
   margin-top: 20px;
 }
